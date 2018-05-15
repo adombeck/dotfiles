@@ -20,3 +20,13 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export GOPATH=~/Projekte/Go
 export PATH=$PATH:$GOPATH/bin
 
+# Hide user@host from prompt
+DEFAULT_USER=$USER
+prompt_context(){}
+
+# Make Ctrl-d close the shell
+unsetopt ignoreeof
+
+# Fix space being removed after tab completion
+ZLE_SPACE_SUFFIX_CHARS=$'|&'
+

@@ -1,6 +1,9 @@
 #!/bin/bash
+set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+$DIR/install-oh-my-zsh.sh
 
 function ensure_mount_point_exists {	
 	src=$1

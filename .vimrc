@@ -38,13 +38,13 @@ set list listchars=tab:»·,trail:·
 set backspace=indent,eol,start
 
 " Strip trailing whitespaces on each save
-fun! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+" fun! <SID>StripTrailingWhitespaces()
+"     let l = line(".")
+"     let c = col(".")
+"     %s/\s\+$//e
+"     call cursor(l, c)
+" endfun
+" autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " Close window if last remaining window is NerdTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

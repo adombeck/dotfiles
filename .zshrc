@@ -5,6 +5,8 @@ export LANG=en_US.UTF-8
 
 ZSH_THEME="agnoster"
 
+plugins=(bgnotify)
+
 source $ZSH/oh-my-zsh.sh
 
 # Extend Autocomplete Search Path

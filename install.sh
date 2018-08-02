@@ -3,7 +3,11 @@ set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-$DIR/install-oh-my-zsh.sh
+if [ -d $HOME/.oh-my-zsh ]; then
+	echo "oh-my-zsh already installed. skipping."
+else
+	$DIR/install-oh-my-zsh.sh
+fi
 
 function ensure_mount_point_exists {	
 	src=$1

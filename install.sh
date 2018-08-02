@@ -27,7 +27,7 @@ function add_to_fstab {
 }
 
 for f in $DIR/.[!.]*; do
-	if [[ "$f" == "$DIR/.git"* ]]; then
+	if [[ "$f" == "$DIR/.git"* ]] || [[ "$f" == "$DIR/.nfs"* ]]; then
 		echo "Skipping $f"
 		continue
 	fi

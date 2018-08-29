@@ -16,7 +16,7 @@ fpath=($HOME/.zsh/lib/completions $fpath)
 autoload -U compinit
 compinit -i
 
-PATH=/usr/local/bin:/usr/local/sbin:/home/user/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH
 
 # Go Path related exports
 export GOPATH=~/go

@@ -19,7 +19,7 @@ compinit -i
 PATH=/usr/local/bin:/usr/local/sbin:/home/user/bin:$PATH
 
 # Go Path related exports
-export GOPATH=~/Projekte/Go
+export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
 # Hide user@host from prompt

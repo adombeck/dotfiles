@@ -39,3 +39,6 @@ ZLE_SPACE_SUFFIX_CHARS=$'|&'
 # Keep background processes running when closing terminal
 setopt NO_HUP
 setopt NO_CHECK_JOBS
+
+# Disable beep
+unsetopt BEEP

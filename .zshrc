@@ -3,6 +3,9 @@ export ZSH=~/.oh-my-zsh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# Required to set PATHs for snap
+emulate sh -c 'source /etc/profile'
+
 ZSH_THEME="agnoster"
 
 plugins=(bgnotify)

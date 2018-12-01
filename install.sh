@@ -36,3 +36,5 @@ for f in $DIR/.[!.]*; do
 	ensure_mount_point_exists $f $mountpoint
 	add_to_fstab $f $mountpoint
 done
+
+echo "Run \`sudo mount -a\` to complete the installation"

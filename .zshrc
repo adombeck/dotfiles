@@ -3,11 +3,18 @@ export ZSH=~/.oh-my-zsh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# Required to set PATHs for snap
+emulate sh -c 'source /etc/profile'
+
 ZSH_THEME="agnoster"
 
 plugins=(bgnotify)
 
 source $ZSH/oh-my-zsh.sh
+
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
 
 # Extend Autocomplete Search Path
 fpath=($HOME/.zsh/lib/completions $fpath)
@@ -38,3 +45,6 @@ setopt NO_CHECK_JOBS
 
 # Disable Software Flow Control which causes terminal to hang on C-s (at least in vim)
 stty -ixon
+
+# Disable beep
+unsetopt BEEP

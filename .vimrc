@@ -82,6 +82,9 @@ let g:vim_tags_ignore_files = ['.gitignore', '.svnignore', '.cvsignore', '*.js',
 " make uses real tabs
 au FileType make set noexpandtab
 
+" use real tabs in shell scripts
+au FileType sh set noexpandtab
+
 " Ruby uses 2 spaces
 au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
 

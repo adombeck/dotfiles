@@ -35,3 +35,6 @@ ZLE_SPACE_SUFFIX_CHARS=$'|&'
 # Keep background processes running when closing terminal
 setopt NO_HUP
 setopt NO_CHECK_JOBS
+
+# Disable Software Flow Control which causes terminal to hang on C-s (at least in vim)
+stty -ixon

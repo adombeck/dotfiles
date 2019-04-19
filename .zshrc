@@ -48,3 +48,6 @@ stty -ixon
 
 # Disable beep
 unsetopt BEEP
+
+# Share history betweeh zsh shells
+setopt share_history

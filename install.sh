@@ -3,12 +3,17 @@ set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Install oh-my-zsh
 if [ -d $HOME/.oh-my-zsh ]; then
 	echo "oh-my-zsh already installed. skipping."
 else
 	$DIR/install-oh-my-zsh.sh
 fi
 
+# Install powerline-fonts for the agnoster theme
+sudo apt install -y powerline-fonts
+
+# Add mountpoints to fstab
 function ensure_mount_point_exists {	
 	src=$1
 	mountpoint=$2

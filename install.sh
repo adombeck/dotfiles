@@ -13,6 +13,9 @@ fi
 # Install powerline-fonts for the agnoster theme
 sudo apt install -y powerline-fonts
 
+# Install guake terminal
+$DIR/install-guake.sh
+
 # Add mountpoints to fstab
 function ensure_mount_point_exists {	
 	src=$1

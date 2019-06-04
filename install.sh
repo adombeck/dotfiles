@@ -3,6 +3,9 @@ set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Install vim
+sudo apt install vim
+
 # Install oh-my-zsh
 if [ -d $HOME/.oh-my-zsh ]; then
 	echo "oh-my-zsh already installed. skipping."
